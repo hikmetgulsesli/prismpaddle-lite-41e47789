@@ -1,0 +1,155 @@
+[
+  {
+    "screenId": "92bfd14e49b04b7c9ad85629c36fc2bb",
+    "title": "Game Settings - PrismPaddle Lite",
+    "componentName": "GameSettingsPrismpaddleLite",
+    "file": "src/screens/GameSettingsPrismpaddleLite.tsx",
+    "buttons": 4,
+    "inputs": 7,
+    "links": 4,
+    "actions": [
+      {
+        "id": "close-1",
+        "kind": "button",
+        "label": "Close",
+        "index": 0
+      },
+      {
+        "id": "reset-preferences-2",
+        "kind": "button",
+        "label": "RESET PREFERENCES",
+        "index": 1
+      },
+      {
+        "id": "return-to-gameplay-3",
+        "kind": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "index": 2
+      },
+      {
+        "id": "save-preferences-4",
+        "kind": "button",
+        "label": "SAVE PREFERENCES",
+        "index": 3
+      },
+      {
+        "id": "play-1",
+        "kind": "link",
+        "label": "Play",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "leaderboard-2",
+        "kind": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "hardware-3",
+        "kind": "link",
+        "label": "Hardware",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "502846a1bde247a89b65d4bff2198a19",
+    "title": "Gameplay - PrismPaddle Lite",
+    "componentName": "GameplayPrismpaddleLite",
+    "file": "src/screens/GameplayPrismpaddleLite.tsx",
+    "buttons": 5,
+    "inputs": 0,
+    "links": 7,
+    "actions": [
+      {
+        "id": "leaderboard-1",
+        "kind": "button",
+        "label": "Leaderboard",
+        "index": 0
+      },
+      {
+        "id": "pause-circle-2",
+        "kind": "button",
+        "label": "Pause Circle",
+        "index": 1
+      },
+      {
+        "id": "refresh-3",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 2
+      },
+      {
+        "id": "resume-mission-4",
+        "kind": "button",
+        "label": "RESUME MISSION",
+        "index": 3
+      },
+      {
+        "id": "abort-5",
+        "kind": "button",
+        "label": "ABORT",
+        "index": 4
+      },
+      {
+        "id": "play-1",
+        "kind": "link",
+        "label": "Play",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "leaderboard-2",
+        "kind": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "hardware-3",
+        "kind": "link",
+        "label": "Hardware",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "settings-4",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "eula-5",
+        "kind": "link",
+        "label": "EULA",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "system-status-6",
+        "kind": "link",
+        "label": "SYSTEM STATUS",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "support-7",
+        "kind": "link",
+        "label": "SUPPORT",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  }
+]

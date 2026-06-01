@@ -26,10 +26,10 @@ export function GameSettingsPrismpaddleLite({ actions }: GameSettingsPrismpaddle
       <nav className="hidden md:flex bg-surface-container-low/30 dark:bg-surface-container-low/30 backdrop-blur-xl font-label-caps text-label-caps docked left-0 h-full w-64 border-r border-primary/20 shadow-[5px_0_15px_rgba(0,219,231,0.1)] fixed left-0 top-0 z-40 flex-col pt-24 pb-8">
       <div className="px-6 mb-12">
       <div className="flex items-center gap-4 mb-2">
-      <button className="w-10 h-10 rounded-full bg-surface-tint/20 border border-surface-tint flex items-center justify-center neon-glow" type="button" aria-label="person" onClick={actions?.["settings-4"]}>
-      <User  style={{fontVariationSettings: "'FILL' 1"}} className="text-surface-tint" aria-hidden={true} focusable="false" />
-      <span className="sr-only">person</span>
-      </button>
+	      <button className="w-10 h-10 rounded-full bg-surface-tint/20 border border-surface-tint flex items-center justify-center neon-glow" type="button" aria-label="person" data-action-id="settings-4" onClick={actions?.["settings-4"]}>
+	      <User  style={{fontVariationSettings: "'FILL' 1"}} className="text-surface-tint" aria-hidden={true} focusable="false" />
+	      <span className="sr-only">person</span>
+	      </button>
       <div>
       <div className="font-headline-lg text-headline-lg text-surface-tint text-sm leading-tight">OPERATOR_01</div>
       <div className="text-[10px] text-tertiary-container mt-1 flex items-center gap-1">

@@ -7,4 +7,13 @@ describe('App', () => {
     render(<App />);
     expect(screen.getByTestId('setfarm-app-root')).toBeInTheDocument();
   });
+
+  it('preserves the shell action status live region', () => {
+    render(<App />);
+
+    const status = screen.getByTestId('setfarm-action-status');
+    expect(status).toHaveAttribute('role', 'status');
+    expect(status).toHaveAttribute('aria-live', 'polite');
+    expect(status).toHaveTextContent(/gameplay ready/i);
+  });
 });

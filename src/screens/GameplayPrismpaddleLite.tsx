@@ -71,30 +71,30 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
       {/* Main Content Area (Playfield) */}
       <main className="flex-1 relative w-full h-screen pt-20 md:pl-64 flex flex-col overflow-hidden">
       {/* HUD */}
-      <div className="absolute top-24 left-6 right-6 z-20 flex justify-between items-start pointer-events-none md:left-72">
+      <div className="absolute top-24 left-3 right-3 z-20 flex flex-wrap justify-center gap-2 items-start pointer-events-none md:left-72 md:right-6 md:justify-between md:gap-4">
       {/* Score */}
-      <div className="prism-glass px-6 py-3 rounded-xl flex flex-col items-start min-w-[200px]">
+      <div className="prism-glass px-3 py-2 rounded-xl flex flex-col items-start min-w-0 w-[calc(50%-0.25rem)] max-w-[170px] md:w-auto md:max-w-none md:min-w-[200px] md:px-6 md:py-3">
       <span className="font-label-caps text-label-caps text-surface-tint mb-1">SCORE</span>
-      <span className="font-display-xl text-display-xl text-primary-fixed neon-text-cyan leading-none">042,950</span>
+      <span className="font-display-xl text-3xl md:text-display-xl text-primary-fixed neon-text-cyan leading-none">042,950</span>
       </div>
       {/* Central Status */}
-      <div className="flex flex-col items-center gap-2">
-      <div className="prism-glass px-4 py-2 rounded-full flex items-center gap-3">
-      <div className="w-3 h-3 rounded-full bg-tertiary-container pulse-lime"></div>
+      <div className="order-3 flex w-full flex-col items-center gap-2 md:order-none md:w-auto">
+      <div className="prism-glass px-3 py-2 rounded-full flex items-center gap-2 md:px-4 md:gap-3">
+      <div className="w-2.5 h-2.5 rounded-full bg-tertiary-container pulse-lime md:w-3 md:h-3"></div>
       <span className="font-label-caps text-label-caps text-on-background">SYSTEM: ACTIVE</span>
       </div>
-      <div className="prism-glass px-6 py-2 rounded-xl flex items-center gap-2 border-l-4 border-l-secondary-container">
+      <div className="prism-glass px-4 py-2 rounded-xl flex items-center gap-2 border-l-4 border-l-secondary-container md:px-6">
       <span className="font-label-caps text-label-caps text-secondary-fixed">MULTIPLIER</span>
       <span className="font-stat-value text-stat-value text-secondary-container glow-magenta px-2">x5</span>
       </div>
       </div>
       {/* Lives */}
-      <div className="prism-glass px-6 py-3 rounded-xl flex flex-col items-end min-w-[150px]">
+      <div className="prism-glass px-3 py-2 rounded-xl flex flex-col items-end min-w-0 w-[calc(50%-0.25rem)] max-w-[140px] md:w-auto md:max-w-none md:min-w-[150px] md:px-6 md:py-3">
       <span className="font-label-caps text-label-caps text-error mb-2">INTEGRITY</span>
       <div className="flex gap-2">
-      <div className="w-8 h-3 bg-surface-tint rounded-sm glow-cyan"></div>
-      <div className="w-8 h-3 bg-surface-tint rounded-sm glow-cyan"></div>
-      <div className="w-8 h-3 bg-surface-variant rounded-sm border border-outline"></div>
+      <div className="w-6 h-3 bg-surface-tint rounded-sm glow-cyan md:w-8"></div>
+      <div className="w-6 h-3 bg-surface-tint rounded-sm glow-cyan md:w-8"></div>
+      <div className="w-6 h-3 bg-surface-variant rounded-sm border border-outline md:w-8"></div>
       </div>
       </div>
       </div>

@@ -19,7 +19,8 @@ export interface GameplayPrismpaddleLiteProps {
 }
 
 export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddleLiteProps) {
-  void runtime;
+  const showPausedOverlay = runtime?.paused ?? true;
+
   return (
     <>
       {/* SideNavBar */}
@@ -123,7 +124,7 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
       {/* Paddle (Simulated) */}
       <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 w-48 h-4 rounded-full bg-surface-tint shadow-[0_0_20px_rgba(0,219,231,0.6)] z-10"></div>
       {/* Start Game Overlay (Simulated Paused/Start State) */}
-      {/* Uncomment to view Paused State
+      {showPausedOverlay ? (
                   <div className="absolute inset-0 z-30 flex items-center justify-center bg-background/60 backdrop-blur-sm">
                       <div className="prism-glass p-12 rounded-2xl flex flex-col items-center border-t-2 border-t-surface-tint glow-cyan">
                           <h2 className="font-display-xl text-display-xl text-surface-tint neon-text-cyan mb-2">PAUSED</h2>
@@ -136,7 +137,8 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
                               ABORT
                           </button>
                       </div>
-                  </div> */}
+                  </div>
+      ) : null}
       </div>
       </main>
       {/* Footer */}

@@ -19,7 +19,8 @@ export interface GameplayPrismpaddleLiteProps {
 }
 
 export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddleLiteProps) {
-  void runtime;
+  const showPausedOverlay = runtime?.paused ?? true;
+
   return (
     <>
       {/* SideNavBar */}
@@ -70,30 +71,30 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
       {/* Main Content Area (Playfield) */}
       <main className="flex-1 relative w-full h-screen pt-20 md:pl-64 flex flex-col overflow-hidden">
       {/* HUD */}
-      <div className="absolute top-24 left-6 right-6 z-20 flex justify-between items-start pointer-events-none md:left-72">
+      <div className="absolute top-24 left-3 right-3 z-20 flex flex-wrap justify-center gap-2 items-start pointer-events-none md:left-72 md:right-6 md:justify-between md:gap-4">
       {/* Score */}
-      <div className="prism-glass px-6 py-3 rounded-xl flex flex-col items-start min-w-[200px]">
+      <div className="prism-glass px-3 py-2 rounded-xl flex flex-col items-start min-w-0 w-[calc(50%-0.25rem)] max-w-[170px] md:w-auto md:max-w-none md:min-w-[200px] md:px-6 md:py-3">
       <span className="font-label-caps text-label-caps text-surface-tint mb-1">SCORE</span>
-      <span className="font-display-xl text-display-xl text-primary-fixed neon-text-cyan leading-none">042,950</span>
+      <span className="font-display-xl text-3xl md:text-display-xl text-primary-fixed neon-text-cyan leading-none">042,950</span>
       </div>
       {/* Central Status */}
-      <div className="flex flex-col items-center gap-2">
-      <div className="prism-glass px-4 py-2 rounded-full flex items-center gap-3">
-      <div className="w-3 h-3 rounded-full bg-tertiary-container pulse-lime"></div>
+      <div className="order-3 flex w-full flex-col items-center gap-2 md:order-none md:w-auto">
+      <div className="prism-glass px-3 py-2 rounded-full flex items-center gap-2 md:px-4 md:gap-3">
+      <div className="w-2.5 h-2.5 rounded-full bg-tertiary-container pulse-lime md:w-3 md:h-3"></div>
       <span className="font-label-caps text-label-caps text-on-background">SYSTEM: ACTIVE</span>
       </div>
-      <div className="prism-glass px-6 py-2 rounded-xl flex items-center gap-2 border-l-4 border-l-secondary-container">
+      <div className="prism-glass px-4 py-2 rounded-xl flex items-center gap-2 border-l-4 border-l-secondary-container md:px-6">
       <span className="font-label-caps text-label-caps text-secondary-fixed">MULTIPLIER</span>
       <span className="font-stat-value text-stat-value text-secondary-container glow-magenta px-2">x5</span>
       </div>
       </div>
       {/* Lives */}
-      <div className="prism-glass px-6 py-3 rounded-xl flex flex-col items-end min-w-[150px]">
+      <div className="prism-glass px-3 py-2 rounded-xl flex flex-col items-end min-w-0 w-[calc(50%-0.25rem)] max-w-[140px] md:w-auto md:max-w-none md:min-w-[150px] md:px-6 md:py-3">
       <span className="font-label-caps text-label-caps text-error mb-2">INTEGRITY</span>
       <div className="flex gap-2">
-      <div className="w-8 h-3 bg-surface-tint rounded-sm glow-cyan"></div>
-      <div className="w-8 h-3 bg-surface-tint rounded-sm glow-cyan"></div>
-      <div className="w-8 h-3 bg-surface-variant rounded-sm border border-outline"></div>
+      <div className="w-6 h-3 bg-surface-tint rounded-sm glow-cyan md:w-8"></div>
+      <div className="w-6 h-3 bg-surface-tint rounded-sm glow-cyan md:w-8"></div>
+      <div className="w-6 h-3 bg-surface-variant rounded-sm border border-outline md:w-8"></div>
       </div>
       </div>
       </div>
@@ -122,28 +123,30 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-primary-fixed shadow-[0_0_30px_rgba(116,245,255,1)] z-10"></div>
       {/* Paddle (Simulated) */}
       <div className="absolute bottom-24 left-1/2 transform -translate-x-1/2 w-48 h-4 rounded-full bg-surface-tint shadow-[0_0_20px_rgba(0,219,231,0.6)] z-10"></div>
-	      {/* Start Game Overlay (Simulated Paused/Start State) */}
-	                  <div className="absolute inset-0 z-30 flex items-center justify-center bg-background/60 backdrop-blur-sm">
-	                      <div className="prism-glass p-12 rounded-2xl flex flex-col items-center border-t-2 border-t-surface-tint glow-cyan">
-	                          <h2 className="font-display-xl text-display-xl text-surface-tint neon-text-cyan mb-2">PAUSED</h2>
-	                          <p className="font-label-caps text-label-caps text-on-surface-variant mb-8 tracking-widest">SYSTEM STANDBY</p>
+      {/* Start Game Overlay (Simulated Paused/Start State) */}
+      {showPausedOverlay ? (
+                  <div className="absolute inset-0 z-30 flex items-center justify-center bg-background/60 backdrop-blur-sm">
+                      <div className="prism-glass p-12 rounded-2xl flex flex-col items-center border-t-2 border-t-surface-tint glow-cyan">
+                          <h2 className="font-display-xl text-display-xl text-surface-tint neon-text-cyan mb-2">PAUSED</h2>
+                          <p className="font-label-caps text-label-caps text-on-surface-variant mb-8 tracking-widest">SYSTEM STANDBY</p>
                           
                           <button className="bg-white/5 border-[1.5px] border-surface-tint text-surface-tint font-label-caps text-label-caps px-8 py-4 rounded-lg hover:bg-white/20 glow-cyan transition-colors duration-300 w-full mb-4" type="button" data-action-id="resume-mission-4" onClick={actions?.["resume-mission-4"]}>
                               RESUME MISSION
                           </button>
-	                          <button className="bg-transparent border-[1.5px] border-outline text-outline font-label-caps text-label-caps px-8 py-4 rounded-lg hover:bg-surface-variant hover:text-on-surface transition-colors duration-300 w-full" type="button" data-action-id="abort-5" onClick={actions?.["abort-5"]}>
-	                              ABORT
-	                          </button>
-	                      </div>
-	                  </div>
+                          <button className="bg-transparent border-[1.5px] border-outline text-outline font-label-caps text-label-caps px-8 py-4 rounded-lg hover:bg-surface-variant hover:text-on-surface transition-colors duration-300 w-full" type="button" data-action-id="abort-5" onClick={actions?.["abort-5"]}>
+                              ABORT
+                          </button>
+                      </div>
+                  </div>
+      ) : null}
       </div>
       </main>
       {/* Footer */}
       <footer className="fixed bottom-0 w-full flex justify-between px-margin-desktop py-4 z-30 bg-transparent h-px md:pl-[calc(16rem+40px)] pointer-events-none">
       <div className="absolute inset-x-0 bottom-full bg-gradient-to-r from-transparent via-surface-tint/20 to-transparent h-px"></div>
-	      <button className="font-label-caps text-label-caps text-outline pointer-events-auto truncate text-xs" type="button" data-action-id="system-status-6" onClick={actions?.["system-status-6"]}>
-	                  © 2024 PRISM PADDLE LITE // NEON PROTOCOL
-	              </button>
+      <button className="font-label-caps text-label-caps text-outline pointer-events-auto truncate text-xs bg-transparent border-0 p-0 text-left hover:text-surface-tint transition-colors" type="button" data-action-id="system-status-6" onClick={actions?.["system-status-6"]}>
+                  © 2024 PRISM PADDLE LITE // NEON PROTOCOL
+              </button>
       <div className="flex gap-6 pointer-events-auto">
       <a className="font-label-caps text-label-caps text-outline hover:text-surface-tint transition-colors text-xs hidden sm:block" href="#" data-action-id="eula-5" onClick={(event) => { event.preventDefault(); actions?.["eula-5"]?.(); }}>EULA</a>
       <a className="font-label-caps text-label-caps text-surface-tint hover:text-surface-tint transition-colors text-xs hidden sm:block" href="#" data-action-id="system-status-6" onClick={(event) => { event.preventDefault(); actions?.["system-status-6"]?.(); }}>SYSTEM STATUS</a>

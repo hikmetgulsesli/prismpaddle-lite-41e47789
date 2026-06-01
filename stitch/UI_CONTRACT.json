@@ -1,0 +1,341 @@
+[
+  {
+    "screenId": "92bfd14e49b04b7c9ad85629c36fc2bb",
+    "screenTitle": "Game Settings - PrismPaddle Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 307
+      },
+      {
+        "type": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "line": 313
+      },
+      {
+        "type": "link",
+        "label": "Hardware",
+        "href": "#",
+        "line": 319
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 325
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 350
+      },
+      {
+        "type": "button",
+        "label": "RESET PREFERENCES",
+        "line": 448
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "line": 452
+      },
+      {
+        "type": "button",
+        "label": "PREFERENCES",
+        "line": 455
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 365
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 372
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 379
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 397
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 418
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 428
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 438
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 307
+      },
+      {
+        "type": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "line": 313
+      },
+      {
+        "type": "link",
+        "label": "Hardware",
+        "href": "#",
+        "line": 319
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 325
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "close",
+        "line": 350
+      },
+      {
+        "type": "button",
+        "label": "RESET PREFERENCES",
+        "line": 448
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAMEPLAY",
+        "line": 452
+      },
+      {
+        "type": "button",
+        "label": "PREFERENCES",
+        "line": 455
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 365
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 372
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 379
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 397
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 418
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 428
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 438
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 15,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "502846a1bde247a89b65d4bff2198a19",
+    "screenTitle": "Gameplay - PrismPaddle Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Hardware",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "EULA",
+        "href": "#",
+        "line": 264
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM STATUS",
+        "href": "#",
+        "line": 265
+      },
+      {
+        "type": "link",
+        "label": "SUPPORT",
+        "href": "#",
+        "line": 266
+      },
+      {
+        "type": "button",
+        "label": "leaderboard",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "pause_circle",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "RESUME MISSION",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "ABORT",
+        "line": 249
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Play",
+        "href": "#",
+        "line": 149
+      },
+      {
+        "type": "link",
+        "label": "Leaderboard",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "Hardware",
+        "href": "#",
+        "line": 157
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "EULA",
+        "href": "#",
+        "line": 264
+      },
+      {
+        "type": "link",
+        "label": "SYSTEM STATUS",
+        "href": "#",
+        "line": 265
+      },
+      {
+        "type": "link",
+        "label": "SUPPORT",
+        "href": "#",
+        "line": 266
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "leaderboard",
+        "line": 173
+      },
+      {
+        "type": "button",
+        "label": "pause_circle",
+        "line": 176
+      },
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 179
+      },
+      {
+        "type": "button",
+        "label": "RESUME MISSION",
+        "line": 246
+      },
+      {
+        "type": "button",
+        "label": "ABORT",
+        "line": 249
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]

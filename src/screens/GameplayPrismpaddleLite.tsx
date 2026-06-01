@@ -142,9 +142,9 @@ export function GameplayPrismpaddleLite({ actions, runtime }: GameplayPrismpaddl
       {/* Footer */}
       <footer className="fixed bottom-0 w-full flex justify-between px-margin-desktop py-4 z-30 bg-transparent h-px md:pl-[calc(16rem+40px)] pointer-events-none">
       <div className="absolute inset-x-0 bottom-full bg-gradient-to-r from-transparent via-surface-tint/20 to-transparent h-px"></div>
-      <div className="font-label-caps text-label-caps text-outline pointer-events-auto truncate text-xs">
+      <button className="font-label-caps text-label-caps text-outline pointer-events-auto truncate text-xs bg-transparent border-0 p-0 text-left hover:text-surface-tint transition-colors" type="button" data-action-id="system-status-6" onClick={actions?.["system-status-6"]}>
                   © 2024 PRISM PADDLE LITE // NEON PROTOCOL
-              </div>
+              </button>
       <div className="flex gap-6 pointer-events-auto">
       <a className="font-label-caps text-label-caps text-outline hover:text-surface-tint transition-colors text-xs hidden sm:block" href="#" data-action-id="eula-5" onClick={(event) => { event.preventDefault(); actions?.["eula-5"]?.(); }}>EULA</a>
       <a className="font-label-caps text-label-caps text-surface-tint hover:text-surface-tint transition-colors text-xs hidden sm:block" href="#" data-action-id="system-status-6" onClick={(event) => { event.preventDefault(); actions?.["system-status-6"]?.(); }}>SYSTEM STATUS</a>

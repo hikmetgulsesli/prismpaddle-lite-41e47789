@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Settings - PrismPaddle Lite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@700;800&amp;family=JetBrains+Mono:wght@600&amp;family=Outfit:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-background": "#dfe2ef",
+                      "surface-tint": "#00dbe7",
+                      "outline-variant": "#3a494b",
+                      "secondary-fixed-dim": "#fface8",
+                      "secondary-fixed": "#ffd7f0",
+                      "primary-container": "#00f2ff",
+                      "primary": "#e1fdff",
+                      "error-container": "#93000a",
+                      "surface-container-low": "#181b25",
+                      "on-surface-variant": "#b9cacb",
+                      "on-tertiary": "#223600",
+                      "on-tertiary-fixed": "#121f00",
+                      "inverse-on-surface": "#2c303a",
+                      "surface-dim": "#0f131c",
+                      "secondary": "#fface8",
+                      "tertiary-fixed-dim": "#94db00",
+                      "on-surface": "#dfe2ef",
+                      "surface-variant": "#31353f",
+                      "on-tertiary-fixed-variant": "#334f00",
+                      "on-primary-fixed": "#002022",
+                      "inverse-surface": "#dfe2ef",
+                      "background": "#0f131c",
+                      "surface-container-highest": "#31353f",
+                      "inverse-primary": "#00696f",
+                      "secondary-container": "#ff24e4",
+                      "on-primary-container": "#006a71",
+                      "surface": "#0f131c",
+                      "on-secondary": "#5e0053",
+                      "surface-container-high": "#262a34",
+                      "on-tertiary-container": "#466a00",
+                      "tertiary": "#ebffc7",
+                      "primary-fixed-dim": "#00dbe7",
+                      "outline": "#849495",
+                      "surface-container": "#1c1f29",
+                      "on-error": "#690005",
+                      "primary-fixed": "#74f5ff",
+                      "on-primary-fixed-variant": "#004f54",
+                      "on-secondary-container": "#520049",
+                      "tertiary-container": "#a3f100",
+                      "on-secondary-fixed": "#3a0033",
+                      "on-secondary-fixed-variant": "#840076",
+                      "error": "#ffb4ab",
+                      "on-error-container": "#ffdad6",
+                      "tertiary-fixed": "#a9f900",
+                      "on-primary": "#00363a",
+                      "surface-bright": "#353943",
+                      "surface-container-lowest": "#0a0e17"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "40px",
+                      "container-max": "1200px",
+                      "gutter": "16px",
+                      "margin-mobile": "20px",
+                      "unit": "4px"
+              },
+              "fontFamily": {
+                      "headline-lg": [
+                              "Sora"
+                      ],
+                      "stat-value": [
+                              "Sora"
+                      ],
+                      "label-caps": [
+                              "JetBrains Mono"
+                      ],
+                      "body-md": [
+                              "Outfit"
+                      ],
+                      "display-xl": [
+                              "Sora"
+                      ],
+                      "headline-lg-mobile": [
+                              "Sora"
+                      ]
+              },
+              "fontSize": {
+                      "headline-lg": [
+                              "40px",
+                              {
+                                      "lineHeight": "48px",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "stat-value": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-caps": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "display-xl": [
+                              "72px",
+                              {
+                                      "lineHeight": "80px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+    </script>
+<style>
+        body {
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+            overflow-x: hidden;
+        }
+
+        .bg-grid {
+            background-size: 32px 32px;
+            background-image:
+                linear-gradient(to right, rgba(0, 219, 231, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 219, 231, 0.05) 1px, transparent 1px);
+        }
+
+        .glass-panel {
+            background: rgba(24, 27, 37, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(0, 219, 231, 0.2);
+        }
+        
+        .glass-modal {
+            background: rgba(15, 19, 28, 0.85);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(0, 219, 231, 0.3);
+            box-shadow: 0 0 40px rgba(0, 219, 231, 0.15);
+        }
+
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(0, 219, 231, 0.4);
+        }
+
+        .neon-glow-secondary {
+            box-shadow: 0 0 15px rgba(255, 36, 228, 0.4);
+        }
+
+        .prism-divider {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0, 219, 231, 0.5), transparent);
+        }
+
+        /* Custom Scrollbar for Settings Modal */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: theme('colors.surface-tint');
+            border-radius: 2px;
+        }
+        
+        /* Range Slider Styling */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 16px;
+            width: 16px;
+            border-radius: 50%;
+            background: theme('colors.surface-tint');
+            cursor: pointer;
+            margin-top: -6px;
+            box-shadow: 0 0 10px rgba(0, 219, 231, 0.8);
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: rgba(0, 219, 231, 0.2);
+            border-radius: 2px;
+        }
+        input[type=range]:focus::-webkit-slider-runnable-track {
+            background: rgba(0, 219, 231, 0.4);
+        }
+
+        /* Custom Checkbox / Toggle */
+        .neon-toggle {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+        }
+        .neon-toggle input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .toggle-slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: .4s;
+            border-radius: 12px;
+            border: 1px solid rgba(0, 219, 231, 0.2);
+        }
+        .toggle-slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: theme('colors.on-surface-variant');
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .toggle-slider {
+            background-color: rgba(0, 219, 231, 0.2);
+            border-color: theme('colors.surface-tint');
+            box-shadow: 0 0 10px rgba(0, 219, 231, 0.3);
+        }
+        input:checked + .toggle-slider:before {
+            transform: translateX(20px);
+            background-color: theme('colors.surface-tint');
+            box-shadow: 0 0 10px rgba(0, 219, 231, 0.8);
+        }
+
+        .pulse-dot {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(163, 241, 0, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(163, 241, 0, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(163, 241, 0, 0); }
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex selection:bg-surface-tint/30 selection:text-surface-tint">
+<!-- Background Grid -->
+<div class="fixed inset-0 bg-grid pointer-events-none z-0"></div>
+<!-- SideNavBar (Settings Active) -->
+<nav class="hidden md:flex bg-surface-container-low/30 dark:bg-surface-container-low/30 backdrop-blur-xl font-label-caps text-label-caps docked left-0 h-full w-64 border-r border-primary/20 shadow-[5px_0_15px_rgba(0,219,231,0.1)] fixed left-0 top-0 z-40 flex-col pt-24 pb-8">
+<div class="px-6 mb-12">
+<div class="flex items-center gap-4 mb-2">
+<div class="w-10 h-10 rounded-full bg-surface-tint/20 border border-surface-tint flex items-center justify-center neon-glow">
+<span class="material-symbols-outlined text-surface-tint" style="font-variation-settings: 'FILL' 1;">person</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-surface-tint text-sm leading-tight">OPERATOR_01</div>
+<div class="text-[10px] text-tertiary-container mt-1 flex items-center gap-1">
+<div class="w-1.5 h-1.5 rounded-full bg-tertiary-container pulse-dot"></div>
+                        RANK: ELITE
+                    </div>
+</div>
+</div>
+</div>
+<ul class="flex-1 px-4 space-y-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant/70 hover:text-surface-tint hover:bg-primary/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">videogame_asset</span>
+                    Play
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant/70 hover:text-surface-tint hover:bg-primary/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">trophy</span>
+                    Leaderboard
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-on-surface-variant/70 hover:text-surface-tint hover:bg-primary/10 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">settings_input_component</span>
+                    Hardware
+                </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 rounded text-surface-tint border-r-2 border-surface-tint bg-primary/5 transition-colors duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">settings</span>
+                    Settings
+                </a>
+</li>
+</ul>
+</nav>
+<!-- Main Canvas Content (Blurred Gameplay Background Simulation) -->
+<main class="flex-1 ml-0 md:ml-64 relative min-h-screen flex items-center justify-center p-gutter z-10">
+<!-- Simulated Blurred Gameplay Layer -->
+<div class="absolute inset-0 z-0 overflow-hidden bg-surface-dim">
+<!-- Simulated Gameplay Elements -->
+<div class="absolute top-[20%] left-[30%] w-32 h-32 bg-secondary-container/20 rounded-full blur-3xl mix-blend-screen"></div>
+<div class="absolute bottom-[20%] right-[30%] w-48 h-48 bg-primary-container/20 rounded-full blur-3xl mix-blend-screen"></div>
+<!-- Contextual Overlay Blur -->
+<div class="absolute inset-0 backdrop-blur-md bg-background/60"></div>
+</div>
+<!-- Settings Modal -->
+<div class="glass-modal w-full max-w-2xl rounded-xl relative z-20 flex flex-col max-h-[921px]">
+<!-- Modal Header -->
+<div class="p-6 flex justify-between items-center">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-surface-tint text-3xl">settings</span>
+<h1 class="font-headline-lg text-headline-lg-mobile text-surface-tint drop-shadow-[0_0_10px_rgba(0,219,231,0.3)] m-0">GAME SETTINGS</h1>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-surface-tint/30 text-on-surface-variant hover:bg-surface-tint/20 hover:text-surface-tint hover:border-surface-tint transition-all duration-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="prism-divider"></div>
+<!-- Modal Body (Scrollable) -->
+<div class="p-6 overflow-y-auto flex-1 space-y-8">
+<!-- Section: Difficulty -->
+<section>
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+                        DIFFICULTY LEVEL
+                    </h2>
+<div class="grid grid-cols-3 gap-4">
+<label class="cursor-pointer">
+<input class="peer sr-only" name="difficulty" type="radio" value="easy"/>
+<div class="glass-panel p-4 text-center rounded peer-checked:bg-primary/20 peer-checked:border-surface-tint peer-checked:neon-glow transition-all duration-300">
+<span class="font-stat-value text-stat-value text-on-surface peer-checked:text-surface-tint text-lg block">EASY</span>
+<span class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Casual Pace</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input checked="" class="peer sr-only" name="difficulty" type="radio" value="medium"/>
+<div class="glass-panel p-4 text-center rounded peer-checked:bg-primary/20 peer-checked:border-surface-tint peer-checked:neon-glow transition-all duration-300">
+<span class="font-stat-value text-stat-value text-on-surface peer-checked:text-surface-tint text-lg block">MEDIUM</span>
+<span class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Standard</span>
+</div>
+</label>
+<label class="cursor-pointer">
+<input class="peer sr-only" name="difficulty" type="radio" value="hard"/>
+<div class="glass-panel p-4 text-center rounded peer-checked:bg-secondary-container/20 peer-checked:border-secondary-container peer-checked:neon-glow-secondary transition-all duration-300">
+<span class="font-stat-value text-stat-value text-on-surface peer-checked:text-secondary-container text-lg block">HARD</span>
+<span class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Elite Only</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Section: Gameplay Speed -->
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+                            BASE SPEED MODIFIER
+                        </h2>
+<span class="font-stat-value text-stat-value text-surface-tint text-xl" id="speedValue">1.0x</span>
+</div>
+<div class="glass-panel p-6 rounded">
+<input class="w-full" max="2.0" min="0.5" oninput="document.getElementById('speedValue').innerText = parseFloat(this.value).toFixed(1) + 'x'" step="0.1" type="range" value="1.0"/>
+<div class="flex justify-between text-on-surface-variant/50 font-label-caps text-label-caps mt-2 text-[10px]">
+<span>SLOW</span>
+<span>NORMAL</span>
+<span>FAST</span>
+</div>
+</div>
+</section>
+<!-- Section: Audio -->
+<section>
+<h2 class="font-label-caps text-label-caps text-on-surface-variant mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">volume_up</span>
+                        AUDIO MIX
+                    </h2>
+<div class="glass-panel rounded divide-y divide-primary/10">
+<div class="p-4 flex justify-between items-center hover:bg-white/5 transition-colors">
+<div>
+<div class="font-stat-value text-stat-value text-on-surface text-base">Master Volume</div>
+<div class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Global sound output</div>
+</div>
+<label class="neon-toggle">
+<input checked="" type="checkbox"/>
+<span class="toggle-slider"></span>
+</label>
+</div>
+<div class="p-4 flex justify-between items-center hover:bg-white/5 transition-colors">
+<div>
+<div class="font-stat-value text-stat-value text-on-surface text-base">Synthwave Soundtrack</div>
+<div class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Background music during gameplay</div>
+</div>
+<label class="neon-toggle">
+<input checked="" type="checkbox"/>
+<span class="toggle-slider"></span>
+</label>
+</div>
+<div class="p-4 flex justify-between items-center hover:bg-white/5 transition-colors">
+<div>
+<div class="font-stat-value text-stat-value text-on-surface text-base">Hit Effects</div>
+<div class="font-body-md text-body-md text-on-surface-variant/70 text-sm">Paddle collision sounds</div>
+</div>
+<label class="neon-toggle">
+<input checked="" type="checkbox"/>
+<span class="toggle-slider"></span>
+</label>
+</div>
+</div>
+</section>
+</div>
+<div class="prism-divider"></div>
+<!-- Modal Footer (Actions) -->
+<div class="p-6 bg-surface-container-highest/50 rounded-b-xl flex flex-col sm:flex-row justify-between items-center gap-4">
+<button class="font-label-caps text-label-caps text-outline hover:text-error transition-colors duration-200 order-3 sm:order-1">
+                    RESET PREFERENCES
+                </button>
+<div class="flex flex-col sm:flex-row w-full sm:w-auto gap-4 order-1 sm:order-2">
+<button class="font-label-caps text-label-caps bg-white/5 border border-surface-tint/50 text-surface-tint px-6 py-3 rounded hover:bg-surface-tint/10 hover:border-surface-tint transition-all duration-300 w-full sm:w-auto text-center">
+                        RETURN TO GAMEPLAY
+                    </button>
+<button class="font-label-caps text-label-caps bg-surface-tint/10 border border-surface-tint text-surface-tint px-6 py-3 rounded neon-glow hover:bg-surface-tint/20 active:scale-95 transition-all duration-300 w-full sm:w-auto text-center flex items-center justify-center gap-2">
+                        SAVE PREFERENCES
+                        <span class="material-symbols-outlined text-[18px]">save</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

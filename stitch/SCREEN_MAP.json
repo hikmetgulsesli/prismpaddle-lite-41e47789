@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "92bfd14e49b04b7c9ad85629c36fc2bb",
+    "name": "Game Settings - PrismPaddle Lite",
+    "type": "form",
+    "description": "Game Settings - PrismPaddle Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  },
+  {
+    "screenId": "502846a1bde247a89b65d4bff2198a19",
+    "name": "Gameplay - PrismPaddle Lite",
+    "type": "form",
+    "description": "Gameplay - PrismPaddle Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  }
+]

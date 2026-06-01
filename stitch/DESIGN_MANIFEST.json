@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "92bfd14e49b04b7c9ad85629c36fc2bb",
+    "title": "Game Settings - PrismPaddle Lite",
+    "htmlFile": "92bfd14e49b04b7c9ad85629c36fc2bb.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzQ5ODcyOTgxNGYxNDRmOGY4NjI2NzNjZGQyNGIzOWI3EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxNTUzODc5ODMyNDAwNTQzMDUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/prismpaddle-lite-41e47789/stitch/92bfd14e49b04b7c9ad85629c36fc2bb.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  },
+  {
+    "screenId": "502846a1bde247a89b65d4bff2198a19",
+    "title": "Gameplay - PrismPaddle Lite",
+    "htmlFile": "502846a1bde247a89b65d4bff2198a19.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzBhMDlhZDhjMjQyYTQ0MjU5NGUxNTIxNGU4MDRjMGE4EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMxNTUzODc5ODMyNDAwNTQzMDUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/prismpaddle-lite-41e47789/stitch/502846a1bde247a89b65d4bff2198a19.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  }
+]

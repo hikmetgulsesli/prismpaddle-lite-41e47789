@@ -1,0 +1,1006 @@
+{
+  "generatedAt": "2026-06-01T12:36:00.992Z",
+  "screenCount": 2,
+  "screens": {
+    "502846a1bde247a89b65d4bff2198a19": {
+      "screenId": "502846a1bde247a89b65d4bff2198a19",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "z-40",
+            "flex",
+            "flex-col",
+            "pt-24",
+            "pb-8",
+            "bg-surface-container-low/30"
+          ],
+          "childCount": 5
+        },
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "top-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-margin-desktop",
+            "h-20",
+            "bg-surface/10"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "flex-1",
+            "relative",
+            "w-full",
+            "h-screen",
+            "pt-20",
+            "md:pl-64",
+            "flex",
+            "flex-col",
+            "overflow-hidden"
+          ],
+          "childCount": 29
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "w-full",
+            "flex",
+            "justify-between",
+            "px-margin-desktop",
+            "py-4",
+            "z-30",
+            "bg-transparent",
+            "h-px"
+          ],
+          "childCount": 3
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "leaderboard",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-primary/10",
+            "transition-all",
+            "duration-300",
+            "active:scale-95",
+            "text-surface-tint",
+            "font-bold"
+          ],
+          "icon": "leaderboard",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "pause_circle",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-primary/10",
+            "transition-all",
+            "duration-300",
+            "active:scale-95"
+          ],
+          "icon": "pause_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "refresh",
+          "classes": [
+            "p-2",
+            "rounded-full",
+            "text-on-surface-variant",
+            "hover:bg-primary/10",
+            "transition-all",
+            "duration-300",
+            "active:scale-95"
+          ],
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESUME MISSION",
+          "classes": [
+            "bg-white/5",
+            "border-[1.5px]",
+            "border-surface-tint",
+            "text-surface-tint",
+            "font-label-caps",
+            "text-label-caps",
+            "px-8",
+            "py-4",
+            "rounded-lg",
+            "hover:bg-white/20",
+            "glow-cyan",
+            "transition-all",
+            "duration-300",
+            "w-full",
+            "mb-4"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "ABORT",
+          "classes": [
+            "bg-transparent",
+            "border-[1.5px]",
+            "border-outline",
+            "text-outline",
+            "font-label-caps",
+            "text-label-caps",
+            "px-8",
+            "py-4",
+            "rounded-lg",
+            "hover:bg-surface-variant",
+            "hover:text-on-surface",
+            "transition-all",
+            "duration-300",
+            "w-full"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RANK: ELITE",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PRISM PADDLE LITE // NEON PROTOCOL",
+          "classes": [],
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Play",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "videogame_asset",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "trophy",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "settings_input_component",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "EULA",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-outline",
+            "hover:text-surface-tint",
+            "transition-colors",
+            "text-xs",
+            "hidden",
+            "sm:block"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM STATUS",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-surface-tint",
+            "hover:text-surface-tint",
+            "transition-colors",
+            "text-xs",
+            "hidden",
+            "sm:block"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SUPPORT",
+          "href": "#",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-outline",
+            "hover:text-surface-tint",
+            "transition-colors",
+            "text-xs"
+          ],
+          "icon": null,
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "videogame_asset",
+        "trophy",
+        "settings_input_component",
+        "settings",
+        "leaderboard",
+        "pause_circle",
+        "refresh"
+      ],
+      "images": [
+        {
+          "src": "https://lh3.googleusercontent.com/aida-public/AB6AXuAGU1xhVFDfbZX1T9lxxNjZppIhbuDgrYoCTImLCPt-Ir_LSBWNQUPRdmylQBJG75jRkbIMW9y_FKMYbhFVNdJGpAE5Hj8s74N3sUwyE1AFdyGVP3Dnc-GuceMsMgiDMrvJnyaxuzQDIdh_oOfRqr",
+          "alt": "User Pilot Avatar"
+        }
+      ],
+      "cssVars": {},
+      "colorPalette": {
+        "on-background": "#dfe2ef",
+        "surface-tint": "#00dbe7",
+        "outline-variant": "#3a494b",
+        "secondary-fixed-dim": "#fface8",
+        "secondary-fixed": "#ffd7f0",
+        "primary-container": "#00f2ff",
+        "primary": "#e1fdff",
+        "error-container": "#93000a",
+        "surface-container-low": "#181b25",
+        "on-surface-variant": "#b9cacb",
+        "on-tertiary": "#223600",
+        "on-tertiary-fixed": "#121f00",
+        "inverse-on-surface": "#2c303a",
+        "surface-dim": "#0f131c",
+        "secondary": "#fface8",
+        "tertiary-fixed-dim": "#94db00",
+        "on-surface": "#dfe2ef",
+        "surface-variant": "#31353f",
+        "on-tertiary-fixed-variant": "#334f00",
+        "on-primary-fixed": "#002022",
+        "inverse-surface": "#dfe2ef",
+        "background": "#0f131c",
+        "surface-container-highest": "#31353f",
+        "inverse-primary": "#00696f",
+        "secondary-container": "#ff24e4",
+        "on-primary-container": "#006a71",
+        "surface": "#0f131c",
+        "on-secondary": "#5e0053",
+        "surface-container-high": "#262a34",
+        "on-tertiary-container": "#466a00",
+        "tertiary": "#ebffc7",
+        "primary-fixed-dim": "#00dbe7",
+        "outline": "#849495",
+        "surface-container": "#1c1f29",
+        "on-error": "#690005",
+        "primary-fixed": "#74f5ff",
+        "on-primary-fixed-variant": "#004f54",
+        "on-secondary-container": "#520049",
+        "tertiary-container": "#a3f100",
+        "on-secondary-fixed": "#3a0033",
+        "on-secondary-fixed-variant": "#840076",
+        "error": "#ffb4ab",
+        "on-error-container": "#ffdad6",
+        "tertiary-fixed": "#a9f900",
+        "on-primary": "#00363a",
+        "surface-bright": "#353943",
+        "surface-container-lowest": "#0a0e17"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "Sora",
+        "JetBrains Mono",
+        "Outfit"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "2"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Play",
+          "icon": "videogame_asset",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "icon": "trophy",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "icon": "settings_input_component",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "EULA",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM STATUS",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "SUPPORT",
+          "icon": null,
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "leaderboard",
+          "icon": "leaderboard",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "pause_circle",
+          "icon": "pause_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "refresh",
+          "icon": "refresh",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RESUME MISSION",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "ABORT",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "RANK: ELITE",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PRISM PADDLE LITE // NEON PROTOCOL",
+          "icon": null,
+          "action": "create",
+          "expectedBehavior": "open create flow or add a new item/state"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "RANK: ELITE",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Play",
+          "icon": "videogame_asset",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "icon": "trophy",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "icon": "settings_input_component",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PRISM PADDLE LITE // NEON PROTOCOL",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "EULA",
+          "icon": null,
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "SYSTEM STATUS",
+          "icon": null,
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "SUPPORT",
+          "icon": null,
+          "route": "#",
+          "active": false
+        }
+      ],
+      "title": "Gameplay - PrismPaddle Lite"
+    },
+    "92bfd14e49b04b7c9ad85629c36fc2bb": {
+      "screenId": "92bfd14e49b04b7c9ad85629c36fc2bb",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "nav",
+          "layout": "block",
+          "classes": [
+            "hidden",
+            "md:flex",
+            "bg-surface-container-low/30",
+            "dark:bg-surface-container-low/30",
+            "backdrop-blur-xl",
+            "font-label-caps",
+            "text-label-caps",
+            "docked",
+            "left-0",
+            "h-full"
+          ],
+          "childCount": 11
+        },
+        {
+          "tag": "main",
+          "layout": "flex-row",
+          "classes": [
+            "flex-1",
+            "ml-0",
+            "md:ml-64",
+            "relative",
+            "min-h-screen",
+            "flex",
+            "items-center",
+            "justify-center",
+            "p-gutter",
+            "z-10"
+          ],
+          "childCount": 35
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "close",
+          "classes": [
+            "w-10",
+            "h-10",
+            "flex",
+            "items-center",
+            "justify-center",
+            "rounded-full",
+            "bg-white/5",
+            "border",
+            "border-surface-tint/30",
+            "text-on-surface-variant",
+            "hover:bg-surface-tint/20",
+            "hover:text-surface-tint",
+            "hover:border-surface-tint",
+            "transition-all",
+            "duration-300"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "RESET PREFERENCES",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-outline",
+            "hover:text-error",
+            "transition-colors",
+            "duration-200",
+            "order-3",
+            "sm:order-1"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAMEPLAY",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "bg-white/5",
+            "border",
+            "border-surface-tint/50",
+            "text-surface-tint",
+            "px-6",
+            "py-3",
+            "rounded",
+            "hover:bg-surface-tint/10",
+            "hover:border-surface-tint",
+            "transition-all",
+            "duration-300",
+            "w-full",
+            "sm:w-auto",
+            "text-center"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "PREFERENCES",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "bg-surface-tint/10",
+            "border",
+            "border-surface-tint",
+            "text-surface-tint",
+            "px-6",
+            "py-3",
+            "rounded",
+            "neon-glow",
+            "hover:bg-surface-tint/20",
+            "active:scale-95",
+            "transition-all",
+            "duration-300",
+            "w-full",
+            "sm:w-auto",
+            "text-center",
+            "flex",
+            "items-center",
+            "justify-center",
+            "gap-2"
+          ],
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "person",
+          "classes": [],
+          "icon": "person",
+          "action": "navigate",
+          "expectedRoute": "/profile",
+          "routeInferred": true,
+          "expectedBehavior": "navigate:/profile"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "radio",
+          "label": "difficulty",
+          "placeholder": "",
+          "name": "difficulty",
+          "classes": [
+            "peer",
+            "sr-only"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "range",
+          "label": "range",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "w-full"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "type": "checkbox",
+          "label": "checkbox",
+          "placeholder": "",
+          "name": "",
+          "classes": [],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Play",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "videogame_asset",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "trophy",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings_input_component",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "href": "#",
+          "classes": [
+            "material-symbols-outlined"
+          ],
+          "icon": "settings",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "person",
+        "videogame_asset",
+        "trophy",
+        "settings_input_component",
+        "settings",
+        "close",
+        "speed",
+        "bolt",
+        "volume_up",
+        "save"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-background": "#dfe2ef",
+        "surface-tint": "#00dbe7",
+        "outline-variant": "#3a494b",
+        "secondary-fixed-dim": "#fface8",
+        "secondary-fixed": "#ffd7f0",
+        "primary-container": "#00f2ff",
+        "primary": "#e1fdff",
+        "error-container": "#93000a",
+        "surface-container-low": "#181b25",
+        "on-surface-variant": "#b9cacb",
+        "on-tertiary": "#223600",
+        "on-tertiary-fixed": "#121f00",
+        "inverse-on-surface": "#2c303a",
+        "surface-dim": "#0f131c",
+        "secondary": "#fface8",
+        "tertiary-fixed-dim": "#94db00",
+        "on-surface": "#dfe2ef",
+        "surface-variant": "#31353f",
+        "on-tertiary-fixed-variant": "#334f00",
+        "on-primary-fixed": "#002022",
+        "inverse-surface": "#dfe2ef",
+        "background": "#0f131c",
+        "surface-container-highest": "#31353f",
+        "inverse-primary": "#00696f",
+        "secondary-container": "#ff24e4",
+        "on-primary-container": "#006a71",
+        "surface": "#0f131c",
+        "on-secondary": "#5e0053",
+        "surface-container-high": "#262a34",
+        "on-tertiary-container": "#466a00",
+        "tertiary": "#ebffc7",
+        "primary-fixed-dim": "#00dbe7",
+        "outline": "#849495",
+        "surface-container": "#1c1f29",
+        "on-error": "#690005",
+        "primary-fixed": "#74f5ff",
+        "on-primary-fixed-variant": "#004f54",
+        "on-secondary-container": "#520049",
+        "tertiary-container": "#a3f100",
+        "on-secondary-fixed": "#3a0033",
+        "on-secondary-fixed-variant": "#840076",
+        "error": "#ffb4ab",
+        "on-error-container": "#ffdad6",
+        "tertiary-fixed": "#a9f900",
+        "on-primary": "#00363a",
+        "surface-bright": "#353943",
+        "surface-container-lowest": "#0a0e17"
+      },
+      "fonts": [
+        "Sora",
+        "JetBrains Mono",
+        "Outfit",
+        "Material Symbols Outlined"
+      ],
+      "layoutHints": {
+        "gridCols": 3,
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Play",
+          "icon": "videogame_asset",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "icon": "trophy",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "icon": "settings_input_component",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "close",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "RESET PREFERENCES",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAMEPLAY",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "PREFERENCES",
+          "icon": "save",
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "button",
+          "label": "person",
+          "icon": "person",
+          "action": "navigate",
+          "route": "/profile",
+          "expectedBehavior": "navigate:/profile"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "input",
+          "label": "difficulty",
+          "type": "radio",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "range",
+          "type": "range",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        },
+        {
+          "kind": "input",
+          "label": "checkbox",
+          "type": "checkbox",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "person",
+          "icon": "person",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Play",
+          "icon": "videogame_asset",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Leaderboard",
+          "icon": "trophy",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "Hardware",
+          "icon": "settings_input_component",
+          "route": "#",
+          "active": true
+        },
+        {
+          "kind": "link",
+          "label": "settings",
+          "icon": "settings",
+          "route": "#",
+          "active": true
+        }
+      ],
+      "title": "Game Settings - PrismPaddle Lite"
+    }
+  }
+}
